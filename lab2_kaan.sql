@@ -22,7 +22,7 @@ from rental;
 
 #3
 #Update film set rental_duration = "Not Available" where rental_duration = "NULL"
-
+select title, coalesce(rental_duration, "Not Available") as rental_duration from film;
 #4
 SELECT *, Concat(first_name, last_name, left(email,3)) as marketing_info from customer;
 
