@@ -18,7 +18,7 @@ SELECT COUNT(inventory_id) as available_movies FROM inventory;
 
 SELECT COUNT(rental_id) AS rented_movies from rental;
 #5.4
-SELECT DISTINCT last_name FROM actor;
+SELECT count(DISTINCT( last_name)) FROM actor;
 #6
 SELECT * from Film
 order by length DESC
